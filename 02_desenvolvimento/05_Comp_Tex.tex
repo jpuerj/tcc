@@ -1,0 +1,55 @@
+\section{COMPARAÇÃO COM ALGORITMOS DE APRENDIZAGEM POR REFORÇO}\label{sec:5comp-comparacao}
+
+Na seção \ref{sec:4ec-estudosdecaso} verificamos que a programação genética se mostra propícia para a resolução de problemas clássicos de controle. Ao longo desta seção será feita uma comparação superficial com dois algoritmos que utilizam a abordagem de aprendizagem por reforço: \textit{deep Q-learning} (DQN) \cite{silver2013dqn} e \textit{deep deterministic policy gradient} (DDPG) \cite{lili2015ddpg}. 
+
+Esses algoritmos utilizam fundamentos dos processos de decisão de Markov (PDM), que podem ser vistos como um controle de processos estocásticos em tempo discreto, em que o agente tem controle limitado sobre a dinâmica do ambiente. Na seção 2, os fundamentos desse processo foram abordados de forma breve.
+
+É necessário que seja feita uma breve análise dos fundamentos teóricos em que esses dois algoritmos citados se baseiam, pois será possível verificar suas limitações, vantagens e desvantagens em relação à programação genética.
+
+\subsection{FUNDAMENTOS}\label{ssec:5comp-fundamentos}
+
+Foi visto na seção \ref{sec:2gym-gymependinv} que em uma PDM o agente influência parcialmente a dinâmica do ambiente através de ações. Seu objetivo é interagir com o ambiente de forma a maximizar a recompensa acumulada ao longo do tempo. É feita uma suposição inicial que as recompensas futuras são descontadas por um fator $\gamma$, de modo que, em um episódio, o \textit{retorno} descontado é $R_t=\sum_{t'=t}^T \gamma^{t'-t}\,r_t$, onde $T$ representa o instante de tempo em que ocorre o término do episódio \cite{silver2013dqn}. De certa forma, o fator de desconto ajuda a modelar o comportamento observado na natureza em que o prazo em que a recompensa pode ser obtida influência o seu valor intrínseco. Além disso, a definição de \textit{retorno} com o fator de desconto auxilia o tratamento matemático de PDMs.
+
+É definida a função $Q^*(s,a)$ como o máximo retorno esperado quando o agente esta em um estado $s$ e toma uma ação $a$. No caso mais geral, PDM são processos estocásticos em relação à transição de estados e à recompensa obtida em cada transição, portanto, $Q^*(s,a)$ é uma expectativa. Em termos matemáticos:
+
+\begin{equation}\label{eq:5comp-qexpectedreturn}
+	Q^*(s,a) = \mathbb{E} \left[
+	R_t\,|\,s_t=s,\,a_t=a,\,\pi
+	\right]
+\end{equation}
+
+Onde $\pi$ é um mapeamento de estados $s$ para ações $a$. Pode ser provado que a função em (\ref{eq:5comp-qexpectedreturn}) obedece a equação de Bellman:
+
+\begin{equation}
+	Q^*(s,a) = \mathbb{E}_{s'\sim\mathcal{E} }\left[ r + \gamma \max_{a'} \, Q^*(s',a')\,|\,s,a \right]
+\end{equation}
+
+Intuitivamente, a estratégia ótima é a que seleciona a ação que maximiza o valor esperado da quantidade $r+\gamma Q^*(s',a')$. Portanto, estima-se a função $Q^*$.
+
+A regra de atualização em (\ref{eq:6comp-qupdate}) faz $Q_i\to Q^*$ à medida que $i\to\infty$ \cite{silver2013dqn}.
+
+\begin{equation}\label{eq:6comp-qupdate}
+	Q_{i+1}(s,a) \leftarrow \mathbb{E}\left[ r + \gamma \max_{a'} \, Q_i(s',a')\,|\,s,a \right]
+\end{equation}
+
+Por ser impraticável estimar a quantidade em (\ref{eq:6comp-qupdate}) para cada transição de estado, é feita uma aproximação da função por meio de redes neurais com camadas ocultas (o que explica o termo \textit{deep}), de forma que os pesos da rede neural são atualizados por meio da propagação reversa do gradiente da função custo \cite{silver2013dqn}:
+
+\begin{equation}
+	\nabla_{\theta_i}L_i(\theta_i)=\mathbb{E}_{s,a\sim \rho(.);s'\sim\mathcal{E}}
+	\left[ 
+	\left(r+\gamma \max_{a'}Q(s',a';\theta_{i-1})-Q(s,a;\theta_i)
+	\right)
+	\nabla_{\theta_i}Q(s,a;\theta_i)
+	\right]
+\end{equation}
+
+Onde $\rho(s,a)$ é a distribuição de probabilidades sobre estados e ações. Os pesos são atualizados após cada instante de tempo e o valor esperado é obtido através de amostras da distribuição $\rho$ e da dinâmica do ambiente $\mathcal{E}$.
+
+O algoritmo que utiliza o processo descrito acima é conhecido como \textit{Q-learning}.
+
+Um dos problemas 
+
+
+
+
+
