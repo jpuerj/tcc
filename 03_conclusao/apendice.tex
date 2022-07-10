@@ -1,0 +1,78 @@
+\appendix
+\section*{APÊNDICES}
+\addcontentsline{toc}{section}{\bfseries{APÊNDICES}}
+\addtocontents{toc}{\begingroup\string\makeatletter\global\let\string\l@section\string\l@subsection\endgroup}
+
+\section{Códigos}\label{apendice:codigos}
+
+Todos os códigos utilizados neste trabalho podem ser encontrados no repositório abaixo:
+
+\url{https://github.com/jpuerj/gp-openai-gym}
+
+\section{Condições Inicias}\label{apendice:cond-iniciais}
+
+As condições iniciais de um ambiente são determinadas pela faixa de valores para as quais as variáveis de estado podem ser inicializadas, indicando o início de um episódio. Todos os valores aleatórios são gerados a partir de uma distribuição probabilística uniforme.
+
+\subsection{Pêndulo Invertido}
+
+\begin{table}[H]
+	\centering
+	\caption{Condições iniciais do ambiente \textit{CartPole-v1}.}
+	\label{tab:ap-cartpoleci}
+	\begin{tabular}{SSS} \toprule
+		{Variável} & {Valor Mínimo} & {Valor Máximo} \\ \midrule
+		{$s$} & {-0,05} & {0,05} \\
+		{$\dot{s}$} & {-0,05} & {0,05} \\
+		{$v$} & {-0,05} & {0,05} \\
+		{$\dot{v}$} & {-0,05} & {0,05} \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsection{Pêndulo Swing-up}
+
+\begin{table}[H]
+	\centering
+	\caption{Condições iniciais do ambiente \textit{Pendulum-v0}.}
+	\label{tab:ap-pendulumci}
+	\begin{tabular}{SSS} \toprule
+		{Variável} & {Valor Mínimo} & {Valor Máximo} \\ \midrule
+		{$\cos(\theta)$} & {-1} & {1} \\
+		{$\sin(\theta)$} & {-1} & {1} \\
+		{$\dot{\theta}$} & {-8} & {8} \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+% \subsection{Pêndulo Duplo Invertido}
+
+\subsection{Carro na Ladeira}
+
+\begin{table}[H]
+	\centering
+	\caption{Condições iniciais do ambiente \textit{Pendulum-v0}.}
+	\label{tab:ap-mcci}
+	\begin{tabular}{SSS} \toprule
+		{Variável} & {Valor Mínimo} & {Valor Máximo} \\ \midrule
+		{$s$} & {-0,6} & {-0,4} \\
+		{$\dot{s}$} & {0} & {0} \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\section{Hardware e Software Utilizados}\label{apendice:hardware}
+
+\begin{table}[H]
+	\centering
+	\caption{Características do computador e dos programas utilizados para a execução do algoritmo.}
+	\label{tab:ap-hardware}
+	\begin{tabular}{SS} \toprule
+		\multicolumn{2}{c}{Componente / Programa} \\ \midrule
+		{Processador} & {Ryzen 5 1600}\\
+		{Memória} & {Corsair Vengeance LPX 2x8GB DDR4 3000Mhz} \\
+		{Placa-Mãe} & {Asrock A320M-HD} \\
+		{Interpretador de Python} & {Anaconda} \\
+		{IDE} & {Pycharm Community} \\
+		\bottomrule
+	\end{tabular}
+\end{table}

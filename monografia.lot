@@ -1,0 +1,29 @@
+\babel@toc {brazil}{}
+\contentsline {table}{\numberline {1}{\ignorespaces Vari\IeC {\'a}veis de estado fornecidas como observa\IeC {\c c}\IeC {\~a}o do estado atual ($S_t)$).\relax }}{34}{table.1}% 
+\contentsline {table}{\numberline {2}{\ignorespaces Vari\IeC {\'a}veis terminais.\relax }}{41}{table.2}% 
+\contentsline {table}{\numberline {3}{\ignorespaces Conjunto de operadores l\IeC {\'o}gicos e matem\IeC {\'a}ticos.\relax }}{41}{table.3}% 
+\contentsline {table}{\numberline {4}{\ignorespaces Conjunto de operadores l\IeC {\'o}gicos e matem\IeC {\'a}ticos.\relax }}{42}{table.4}% 
+\contentsline {table}{\numberline {5}{\ignorespaces Par\IeC {\^a}metros da PG para o problema do p\IeC {\^e}ndulo invertido.\relax }}{60}{table.5}% 
+\contentsline {table}{\numberline {6}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre a programa\IeC {\c c}\IeC {\~a}o gen\IeC {\'e}tica e DQN, para o problema do p\IeC {\^e}ndulo invertido.\relax }}{69}{table.6}% 
+\contentsline {table}{\numberline {7}{\ignorespaces Vari\IeC {\'a}veis que comp\IeC {\~o}em a observa\IeC {\c c}\IeC {\~a}o do p\IeC {\^e}ndulo swing-up.\relax }}{71}{table.7}% 
+\contentsline {table}{\numberline {8}{\ignorespaces Par\IeC {\^a}metros da programa\IeC {\c c}\IeC {\~a}o gen\IeC {\'e}tica aplicada ao p\IeC {\^e}ndulo swing-up.\relax }}{72}{table.8}% 
+\contentsline {table}{\numberline {9}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre a programa\IeC {\c c}\IeC {\~a}o gen\IeC {\'e}tica e DDPG para o p\IeC {\^e}ndulo swing-up.\relax }}{80}{table.9}% 
+\contentsline {table}{\numberline {10}{\ignorespaces Vari\IeC {\'a}veis disponibilizadas como observa\IeC {\c c}\IeC {\~a}o do p\IeC {\^e}ndulo duplo invertido.\relax }}{82}{table.10}% 
+\contentsline {table}{\numberline {11}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre PG e DDPG para o p\IeC {\^e}ndulo duplo invertido.\relax }}{89}{table.11}% 
+\contentsline {table}{\numberline {12}{\ignorespaces Vari\IeC {\'a}veis de estado para o problema do carro na ladeira.\relax }}{90}{table.12}% 
+\contentsline {table}{\numberline {13}{\ignorespaces Par\IeC {\^a}metros utilizados para o problema do carro na ladeira.\relax }}{91}{table.13}% 
+\contentsline {table}{\numberline {14}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre PG e DQN para o problema do carro na ladeira.\relax }}{96}{table.14}% 
+\contentsline {table}{\numberline {15}{\ignorespaces Vari\IeC {\'a}veis que fornecem informa\IeC {\c c}\IeC {\~o}es sobre o sistema para o agente.\relax }}{98}{table.15}% 
+\contentsline {table}{\numberline {16}{\ignorespaces Limites definidos para algumas vari\IeC {\'a}veis da Tabela \ref {tab:4ec-carrinhovarestado}.\relax }}{100}{table.16}% 
+\contentsline {table}{\numberline {17}{\ignorespaces Limites para as vari\IeC {\'a}veis de controle $v$ e $\phi $.\relax }}{101}{table.17}% 
+\contentsline {table}{\numberline {18}{\ignorespaces Restri\IeC {\c c}\IeC {\~o}es ao controle exercido por meio das vari\IeC {\'a}veis $\mathaccentV {dot}05F{v}$ e $\mathaccentV {dot}05F{\phi }$.\relax }}{101}{table.18}% 
+\contentsline {table}{\numberline {19}{\ignorespaces Par\IeC {\^a}metros utilizados para o problema 1 do carro rob\IeC {\^o}.\relax }}{105}{table.19}% 
+\contentsline {table}{\numberline {20}{\ignorespaces Problema 1 - custo computacional.\relax }}{108}{table.20}% 
+\contentsline {table}{\numberline {21}{\ignorespaces Problema 2: custo computacional.\relax }}{113}{table.21}% 
+\contentsline {table}{\numberline {22}{\ignorespaces Custo computacional para o problema 3.\relax }}{118}{table.22}% 
+\contentsline {table}{\numberline {23}{\ignorespaces Problema 4: custo computacional.\relax }}{123}{table.23}% 
+\contentsline {table}{\numberline {24}{\ignorespaces Condi\IeC {\c c}\IeC {\~o}es iniciais do ambiente \textit {CartPole-v1}.\relax }}{130}{table.24}% 
+\contentsline {table}{\numberline {25}{\ignorespaces Condi\IeC {\c c}\IeC {\~o}es iniciais do ambiente \textit {Pendulum-v0}.\relax }}{130}{table.25}% 
+\contentsline {table}{\numberline {26}{\ignorespaces Condi\IeC {\c c}\IeC {\~o}es iniciais do ambiente \textit {Pendulum-v0}.\relax }}{131}{table.26}% 
+\contentsline {table}{\numberline {27}{\ignorespaces Caracter\IeC {\'\i }sticas do computador e dos programas utilizados para a execu\IeC {\c c}\IeC {\~a}o do algoritmo.\relax }}{131}{table.27}% 
+\contentsfinish 

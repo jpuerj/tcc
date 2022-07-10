@@ -1,0 +1,30 @@
+(TeX-add-style-hook
+ "biblio"
+ (lambda ()
+   (LaTeX-add-bibitems
+    "duriez17bookMlc"
+    "koza92bookGp"
+    "russell16bookAi"
+    "sutton18bookRl"
+    "koza99inprecGpDarwinian"
+    "brockman16articleOpenAi"
+    "milad19GpSurveyApplic"
+    "koza00GpController"
+    "koza02GpControllerImprov"
+    "koza97bookGp"
+    "jordan15Ml"
+    "marsland14Ml"
+    "eiben03Ec"
+    "wang11PidIp"
+    "openaigym"
+    "deap"
+    "olfa13PendInv"
+    "miller08Cgp"
+    "douglas05Pgl"
+    "barto83CartPole"
+    "gymCartPole"
+    "deapdocs"
+    "alan06PopSize"
+    "poli08GpFieldGuide"))
+ :bibtex)
+

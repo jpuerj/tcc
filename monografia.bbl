@@ -1,0 +1,143 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.42 }
+
+\bibitem{koza92bookGp}
+\abntrefinfo{Koza e Koza}{KOZA; KOZA}{1992}
+{KOZA, J.~R.; KOZA, J.~R. \emph{Genetic programming: on the programming of
+  computers by means of natural selection}. [S.l.]: MIT press, 1992.}
+
+\bibitem{jordan15Ml}
+\abntrefinfo{Jordan e Mitchell}{JORDAN; MITCHELL}{2015}
+{JORDAN, M.~I.; MITCHELL, T.~M. Machine learning: Trends, perspectives, and
+  prospects.
+\emph{Science}, American Association for the Advancement of Science, v.~349,
+  n.~6245, p. 255--260, 2015.}
+
+\bibitem{marsland14Ml}
+\abntrefinfo{Marsland}{MARSLAND}{2014}
+{MARSLAND, S. \emph{Machine learning: an algorithmic perspective}. [S.l.]:
+  Chapman and Hall/CRC, 2014.}
+
+\bibitem{koza97bookGp}
+\abntrefinfo{Koza}{KOZA}{1997}
+{KOZA, J.~R. \emph{Genetic Programming}. 1997.}
+
+\bibitem{openaigym}
+\abntrefinfo{{OpenAI}\ldots}{{OpenAI}\ldots}{}
+{{OpenAI} Gym.
+\url{https://gym.openai.com/}.
+Acessado: 18/07/2019.}
+
+\bibitem{deap}
+\abntrefinfo{{DEAP}\ldots}{{DEAP}\ldots}{}
+{{DEAP} Distributed Evolutionary Algorithms in Python.
+\url{https://github.com/deap/deap}.
+Acessado: 18/07/2019.}
+
+\bibitem{miller08Cgp}
+\abntrefinfo{Miller e Harding}{MILLER; HARDING}{2008}
+{MILLER, J.~F.; HARDING, S.~L. Cartesian genetic programming. In:  ACM.
+  \emph{Proceedings of the 10th annual conference companion on Genetic and
+  evolutionary computation}. [S.l.], 2008. p. 2701--2726.}
+
+\bibitem{douglas05Pgl}
+\abntrefinfo{DIAS}{DIAS}{}
+{DIAS, D.~M.
+\emph{Síntese Automárica de Programas para Microcontroladores Digitais por
+  Programação Genética}.
+Tese (Doutorado).
+Dispon{\'\i}vel em: $<$https://doi.org/10.17771/pucrio.acad.6666$>$.}
+
+\bibitem{duriez17bookMlc}
+\abntrefinfo{Duriez, Brunton e Noack}{DURIEZ; BRUNTON; NOACK}{2017}
+{DURIEZ, T.; BRUNTON, S.~L.; NOACK, B.~R. \emph{Machine Learning Control-Taming
+  Nonlinear Dynamics and Turbulence}. [S.l.]: Springer, 2017.}
+
+\bibitem{olfa13PendInv}
+\abntrefinfo{Boubaker}{BOUBAKER}{2013}
+{BOUBAKER, O. The inverted pendulum benchmark in nonlinear control theory: a
+  survey.
+\emph{International Journal of Advanced Robotic Systems}, SAGE Publications
+  Sage UK: London, England, v.~10, n.~5, p.~233, 2013.}
+
+\bibitem{wang11PidIp}
+\abntrefinfo{Wang}{WANG}{2011}
+{WANG, J.-J. Simulation studies of inverted pendulum based on pid controllers.
+\emph{Simulation Modelling Practice and Theory}, Elsevier, v.~19, n.~1, p.
+  440--449, 2011.}
+
+\bibitem{barto83CartPole}
+\abntrefinfo{Barto, Sutton e Anderson}{BARTO; SUTTON; ANDERSON}{1983}
+{BARTO, A.~G.; SUTTON, R.~S.; ANDERSON, C.~W. Neuronlike adaptive elements that
+  can solve difficult learning control problems.
+\emph{IEEE transactions on systems, man, and cybernetics}, IEEE, n.~5, p.
+  834--846, 1983.}
+
+\bibitem{gymCartPole}
+\abntrefinfo{OpenAI\ldots}{OPENAI\ldots}{}
+{OPENAI Gym - Cart Pole Environment.
+\url{https://github.com/openai/gym/blob/master/gym/envs/classic_control/cartpole.py}.
+Acessado: 23/07/2019.}
+
+\bibitem{sutton18bookRl}
+\abntrefinfo{Sutton e Barto}{SUTTON; BARTO}{2018}
+{SUTTON, R.~S.; BARTO, A.~G. \emph{Reinforcement learning: An introduction}.
+  [S.l.]: MIT press, 2018.}
+
+\bibitem{deapdocs}
+\abntrefinfo{DEAP\ldots}{DEAP\ldots}{}
+{DEAP - Documentation.
+\url{https://deap.readthedocs.io/en/master/}.
+Acessado: 27/07/2019.}
+
+\bibitem{poli08GpFieldGuide}
+\abntrefinfo{Poli et al.}{POLI et al.}{2008}
+{POLI, R. et al. \emph{A field guide to genetic programming}. [S.l.]: Lulu.
+  com, 2008.}
+
+\bibitem{alan06PopSize}
+\abntrefinfo{Piszcz e Soule}{PISZCZ; SOULE}{2006}
+{PISZCZ, A.; SOULE, T. Genetic programming: Optimal population sizes for
+  varying complexity problems. In:  ACM. \emph{Proceedings of the 8th annual
+  conference on Genetic and evolutionary computation}. [S.l.], 2006. p.
+  953--954.}
+
+\bibitem{giacobini2002fitlimit}
+\abntrefinfo{Giacobini, Tomassini e Vanneschi}{GIACOBINI; TOMASSINI;
+  VANNESCHI}{2002}
+{GIACOBINI, M.; TOMASSINI, M.; VANNESCHI, L. Limiting the number of fitness
+  cases in genetic programming using statistics. In:  SPRINGER.
+  \emph{International Conference on Parallel Problem Solving from Nature}.
+  [S.l.], 2002. p. 371--380.}
+
+\bibitem{kotzing14mut}
+\abntrefinfo{K{\"o}tzing et al.}{K{\"O}TZING et al.}{2014}
+{K{\"O}TZING, T. et al. The max problem revisited: the importance of mutation
+  in genetic programming.
+\emph{Theoretical computer science}, Elsevier, v.~545, p. 94--107, 2014.}
+
+\bibitem{silver2013dqn}
+\abntrefinfo{Mnih et al.}{MNIH et al.}{2013}
+{MNIH, V. et al. Playing atari with deep reinforcement learning.
+\emph{arXiv preprint arXiv:1312.5602}, 2013.}
+
+\bibitem{lili2015ddpg}
+\abntrefinfo{Lillicrap et al.}{LILLICRAP et al.}{2015}
+{LILLICRAP, T.~P. et al. Continuous control with deep reinforcement learning.
+\emph{arXiv preprint arXiv:1509.02971}, 2015.}
+
+\bibitem{stable-baselines}
+\abntrefinfo{Hill et al.}{HILL et al.}{2018}
+{HILL, A. et al. \emph{Stable Baselines}. [S.l.]: GitHub, 2018.
+\url{https://github.com/hill-a/stable-baselines}.}
+
+\bibitem{moore1990efficient}
+\abntrefinfo{Moore}{MOORE}{1990}
+{MOORE, A.~W. Efficient memory-based learning for robot control.
+Citeseer, 1990.}
+
+\end{thebibliography}

@@ -1,0 +1,42 @@
+
+\babel@toc {brazil}{}
+\contentsline {section}{\bfseries {\relax $\@@underline {\hbox {INTRODU\IeC {\c C}\IeC {\~A}O}}\mathsurround \z@ $\relax }}{15}{figure.caption.2}% 
+\contentsline {section}{\numberline {1}A PROGRAMA\IeC {\c C}\IeC {\~A}O GEN\IeC {\'E}TICA}{22}{section.1}% 
+\contentsline {section}{\numberline {2}SIMULA\IeC {\c C}\IeC {\~A}O DE SISTEMAS DIN\IeC {\^A}MICOS}{31}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}P\IeC {\^E}NDULO INVERTIDO}{31}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}BIBLIOTECA ``OPENAI GYM\IeC {\textquoteright }\IeC {\textquoteright }}{32}{subsection.2.2}% 
+\contentsline {section}{\numberline {3}DEAP: IMPLEMENTA\IeC {\c C}\IeC {\~A}O DOS AGENTES}{39}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}REPRESENTA\IeC {\c C}\IeC {\~A}O E INICIALIZA\IeC {\c C}\IeC {\~A}O}{40}{subsection.3.1}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Representa\IeC {\c c}\IeC {\~a}o}{40}{subsubsection.3.1.1}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Aptid\IeC {\~a}o}{44}{subsubsection.3.1.2}% 
+\contentsline {subsubsection}{\numberline {3.1.3}Inicializa\IeC {\c c}\IeC {\~a}o}{45}{subsubsection.3.1.3}% 
+\contentsline {subsubsection}{\numberline {3.1.4}Popula\IeC {\c c}\IeC {\~a}o}{47}{subsubsection.3.1.4}% 
+\contentsline {subsection}{\numberline {3.2}AVALIA\IeC {\c C}\IeC {\~A}O DE INDIV\IeC {\'I}DUOS}{49}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}SELE\IeC {\c C}\IeC {\~A}O DE INDIV\IeC {\'I}DUOS}{52}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}OPERADORES GEN\IeC {\'E}TICOS}{53}{subsection.3.4}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Replica\IeC {\c c}\IeC {\~a}o}{53}{subsubsection.3.4.1}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Muta\IeC {\c c}\IeC {\~a}o}{53}{subsubsection.3.4.2}% 
+\contentsline {subsubsection}{\numberline {3.4.3}Cruzamento}{54}{subsubsection.3.4.3}% 
+\contentsline {subsubsection}{\numberline {3.4.4}Sele\IeC {\c c}\IeC {\~a}o Aleat\IeC {\'o}ria do Operador}{55}{subsubsection.3.4.4}% 
+\contentsline {subsection}{\numberline {3.5}CICLO ITERATIVO}{56}{subsection.3.5}% 
+\contentsline {section}{\numberline {4}ESTUDOS DE CASO}{58}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}P\IeC {\^e}ndulo Invertido}{60}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}P\IeC {\^e}ndulo \textit {Swing-up}}{70}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}P\IeC {\^e}ndulo Duplo Invertido}{81}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}Carro na Ladeira}{89}{subsection.4.4}% 
+\contentsline {subsection}{\numberline {4.5}Ve\IeC {\'\i }culo Terrestre Aut\IeC {\^o}nomo}{97}{subsection.4.5}% 
+\contentsline {subsubsection}{\numberline {4.5.1}Problema 1}{103}{subsubsection.4.5.1}% 
+\contentsline {subsubsection}{\numberline {4.5.2}Problema 2}{108}{subsubsection.4.5.2}% 
+\contentsline {subsubsection}{\numberline {4.5.3}Problema 3}{113}{subsubsection.4.5.3}% 
+\contentsline {subsubsection}{\numberline {4.5.4}Problema 4}{118}{subsubsection.4.5.4}% 
+\contentsline {section}{\bfseries {\relax $\@@underline {\hbox {CONCLUS\IeC {\~A}O}}\mathsurround \z@ $\relax }}{124}{table.23}% 
+\contentsline {section}{\bfseries {REFER\IeC {\^E}NCIAS}}{128}{table.23}% 
+\contentsline {section}{\bfseries {AP\IeC {\^E}NDICES}}{130}{table.23}% 
+\begingroup \makeatletter \global \let \l@section \l@subsection \endgroup 
+\contentsline {section}{\numberline {A}C\IeC {\'o}digos}{130}{appendix.A}% 
+\contentsline {section}{\numberline {B}Condi\IeC {\c c}\IeC {\~o}es Inicias}{130}{appendix.B}% 
+\contentsline {subsection}{\numberline {B.1}P\IeC {\^e}ndulo Invertido}{130}{subsection.B.1}% 
+\contentsline {subsection}{\numberline {B.2}P\IeC {\^e}ndulo Swing-up}{130}{subsection.B.2}% 
+\contentsline {subsection}{\numberline {B.3}Carro na Ladeira}{131}{subsection.B.3}% 
+\contentsline {section}{\numberline {C}Hardware e Software Utilizados}{131}{appendix.C}% 
+\contentsfinish 

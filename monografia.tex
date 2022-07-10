@@ -1,0 +1,206 @@
+\documentclass[a4paper,12pt,oneside,openany, sumario=tradicional]{article}
+
+% \includeonly{02_desenvolvimento/04_EC_Tex} % compila apenas esse arquivo (ignora todos os \include exceto esse, para compilar mais rápido)
+
+\usepackage[english,brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{epsf,epsfig}
+\usepackage{auxiliares/psfig}
+\usepackage{auxiliares/pagina}
+\usepackage{indentfirst}
+\usepackage{theorem}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{boxedminipage}
+\usepackage{float}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem, cleveref}
+\usepackage{float}
+\usepackage[justification=centering]{caption}
+\usepackage{siunitx}
+\usepackage{booktabs,threeparttable}
+\usepackage{makecell}
+\usepackage{listings}
+\usepackage{titletoc}
+\usepackage{titlesec}
+\usepackage{mathtools}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{subfig}
+\usepackage{gensymb}
+\usepackage[section]{placeins}
+\usepackage{icomma}
+\usepackage{bm}
+\usepackage{gettitlestring}
+
+%######################################################
+
+\usepackage{tocvsec2}                                                                         
+\makeatletter
+\def\@seccntformat#1{\@ifundefined{#1@cntformat}%
+	{\csname the#1\endcsname\quad}  % default
+	{\csname #1@cntformat\endcsname}% enable individual control
+}
+\let\oldappendix\appendix %% save current definition of \appendix
+\renewcommand\appendix{%
+	\oldappendix
+	\newcommand{\section@cntformat}{\appendixname~\thesection\quad}
+}
+\makeatother
+
+%######################################################
+
+% config code
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+% pacote auxiliar para definir novos environments
+\usepackage{environ}
+\NewEnviron{centerbox}[1][\linewidth]{
+  \noindent\makebox[\linewidth][c]{
+    \begin{minipage}{#1}
+      \raggedright
+      \BODY
+    \end{minipage}
+  }
+}
+
+% environment para definição de classes
+\newcommand{\classdef}[3]
+{
+\par\vspace{0.6cm}\textbf{Classe} #1 (\textit{#2})\par\vspace{0.6cm}
+\begin{centerbox}[0.66\linewidth]
+  #3
+\end{centerbox}\par\vspace{0.8cm}
+}
+
+% environment para definição de métodos
+\newcommand{\metdef}[4]
+{
+\par\vspace{0.6cm}\textbf{Método} #1 (\textit{#2}) de \underline{#3}\par\vspace{0.6cm}
+\begin{centerbox}[0.62\linewidth]
+  #4
+\end{centerbox}\par\vspace{0.8cm}
+}
+
+% environment para definição de funções
+\newcommand{\fundef}[3]
+{
+\par\vspace{0.6cm}\textbf{Função} #1 (\textit{#2})\par\vspace{0.6cm}
+\begin{centerbox}[0.64\linewidth]
+  #3
+\end{centerbox}\par\vspace{0.8cm}
+}
+
+% ToC para figuras, tabelas e código
+\contentsuse{lstlisting}{lol}
+\renewcommand{\lstlistlistingname}{Lista de Códigos}
+\renewcommand{\lstlistingname}{Código}
+\titlecontents{figure}
+  [2.6cm]
+  {}
+  {\contentslabel[\textsc{Figura}~\thecontentslabel~--]{2.6cm}}
+  {\hspace*{0em}}
+  {\titlerule*[1pc]{.}\contentspage}
+ \titlecontents{lstlisting}
+  [2.6cm]
+  {}
+  {\contentslabel[\textsc{Código}~\thecontentslabel~--]{2.65cm}}
+  {\hspace*{0em}}
+  {\titlerule*[1pc]{.}\contentspage}
+\titlecontents{table}
+  [2.6cm]
+  {}
+  {\contentslabel[\textsc{Tabela}~\thecontentslabel~--]{2.65cm}}
+  {\hspace*{0em}}
+  {\titlerule*[1pc]{.}\contentspage} 
+
+
+% caption top of table
+\floatstyle{plaintop}
+\restylefloat{table}
+
+% configurações dos pre-textuais
+\bibliographystyle{abnt-num}
+
+% setup dos hyperlinks
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black,
+    linktoc=all
+}
+
+% operadores
+\DeclareMathOperator{\sign}{sgn}
+
+% caption source
+\newcommand*{\captionsource}[2]{
+  \caption[{#1}]{
+    #1
+    \\\hspace{0.1\linewidth}
+    \footnotesize{\textit{Fonte: #2}}}}
+
+\begin{document}
+
+% elementos pré-textuais (empty retira a numeração das páginas)
+\thispagestyle{empty}\include{00_pretextual/Capa}
+\thispagestyle{empty}\include{00_pretextual/FolhaDeRosto}
+\thispagestyle{empty}\include{00_pretextual/Fichacatalog}
+\thispagestyle{empty}\include{00_pretextual/FolhaDeAprovacao}
+\thispagestyle{empty}\include{00_pretextual/Dedicatoria}
+\thispagestyle{empty}\include{00_pretextual/Agradecimento}
+\thispagestyle{empty}\include{00_pretextual/Resumo}
+\thispagestyle{empty}\include{00_pretextual/Abstract}
+
+% ToC
+\clearpage\listoffigures
+\clearpage\listoftables
+% \clearpage\lstlistoflistings
+\clearpage\tableofcontents
+
+% introdução e ToC
+\addcontentsline{toc}{section}{\bfseries{\underline{INTRODUÇÃO}}}
+\include{01_introducao/introducao}
+
+% desenvolvimento
+\include{02_desenvolvimento/01_Pg_Tex}
+\include{02_desenvolvimento/02_PInv_Tex}
+\include{02_desenvolvimento/03_Deap_Tex}
+\include{02_desenvolvimento/04_EC_Tex}
+
+% conclusão e ToC
+\addcontentsline{toc}{section}{\bfseries {\underline{CONCLUSÃO}}}
+\include{03_conclusao/conclusao}
+ 
+% bibliografia e ToC
+\addcontentsline{toc}{section}{\bfseries{REFERÊNCIAS}}
+\def\bibname{REFERÊNCIAS}
+\bibliography{biblio}
+
+% \printindex
+
+% apêndice e ToC
+\include{03_conclusao/apendice}
+
+
+\end{document}
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
